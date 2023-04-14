@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        background-color: rgba(255, 240, 245, 0.297);
+        justify-content: center;
+        text-align: center;
+
+        
+    }
+    .forms{
+        position: relative;
+        width: 330px;
+        padding: 2rem 1rem;
+        margin: 50px auto;
+        background-color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+        
+    }
+    h2{
+        font-size: 2rem;
+        color: black;
+        margin-bottom: 1.2rem;
+    }
+    form input{
+        width: 92%;
+        outline: none;
+        border: 1px solid white;
+        padding: 12px 20px;
+        margin-bottom: 10px;
+        border-radius: 20px;
+        background: #e4e4e4;
+
+    }
+    form input{
+        position: relative;
+    }
+    form input:hover .popup{
+        display: block;
+    }
+    
+    .popup {
+        
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 5px;
+        font-size: 12px;
+        
+    }
+
+      
+
+    button{
+        font-size: 1rem;
+        margin-top: 1.8rem;
+        padding: 10px 0;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        width: 90%;
+        color: #fff;
+        cursor: pointer;
+        background: rgb(17, 107, 143);
+    }
+    button:hover{
+        background: rgba(17, 107, 143, 0.877);
+    }
+
+
+    
+
+</style>
+<script>
+    function showPopup(id) {
+        var popup = document.getElementById("popup-" + id.toLowerCase());
+        popup.style.display = "block";
+    }
+</script>
+<body>
+    <div class="forms">
+        <h2>Welcome</h2>
+        <h2>Let's create your Account!</h2>
+        <form action="#">
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname" onclick="showPopup('Firstname')" popup>
+            <div class="popup" id="popup-firstname">Firstname</div>
+            <input type="text" id="lastname" name="lastname" placeholder="Lastname" onclick="showPopup('Lastname')" popup>
+            <div class="popup" id="popup-lastname">Last Name</div>
+            <input type="Email" id="email" name="email" placeholder="Email" onclick="showPopup('Email')" popup>
+            <div class="popup" id="popup-email">Email</div> 
+        </form>
+        <button>Submit</button>
+            
+                    
+                    
+</body>
+</html>
