@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+}
+h1{
+    color: rgb(7, 6, 6);
+    font-size: 60px;
+    justify-content: center;
+}
+section{   
+    display: flex;
+    width: 100vw;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: url(aestheticbg.jpg);
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+.box{
+    background-color: rgb(190, 160, 224);
+    width:500px;
+    text-align: start;
+    padding-bottom: 20px;
+}
+h6{
+    color: black;
+    margin-left: 50px;
+    font-size: 20px;
+}
+h3{
+    margin-left: 50px;
+    font-size: 30px;
+}
+.box p{
+    margin-left: 75px;
+}
+.mealplans{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:none;
+    padding-bottom: 50px;
+}
+#content {
+    position: relative;
+}
+#content img {
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    height:110px;
+    width:120px;
+}
