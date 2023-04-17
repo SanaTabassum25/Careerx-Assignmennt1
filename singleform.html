@@ -33,7 +33,7 @@
         
     }
     h2{
-        font-size: 2rem;
+        font-size: 1rem;
         color: black;
         margin-bottom: 1.2rem;
     }
@@ -50,26 +50,6 @@
     form input{
         position: relative;
     }
-    form input:hover .popup{
-        display: block;
-    }
-    
-    .popup {
-        
-        position: absolute;
-        top: -40px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: none;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        padding: 5px;
-        font-size: 12px;
-        
-    }
-
-      
-
     button{
         font-size: 1rem;
         margin-top: 1.8rem;
@@ -90,27 +70,19 @@
     
 
 </style>
-<script>
-    function showPopup(id) {
-        var popup = document.getElementById("popup-" + id.toLowerCase());
-        popup.style.display = "block";
-    }
-</script>
+
 <body>
     <div class="forms">
         <h2>Welcome</h2>
         <h2>Let's create your Account!</h2>
         <form action="#">
-            <input type="text" id="firstname" name="firstname" placeholder="Firstname" onclick="showPopup('Firstname')" popup>
-            <div class="popup" id="popup-firstname">Firstname</div>
-            <input type="text" id="lastname" name="lastname" placeholder="Lastname" onclick="showPopup('Lastname')" popup>
-            <div class="popup" id="popup-lastname">Last Name</div>
-            <input type="Email" id="email" name="email" placeholder="Email" onclick="showPopup('Email')" popup>
-            <div class="popup" id="popup-email">Email</div> 
+            <input type="text"  name="firstname" placeholder="Firstname" required>
+            <input type="text" name="Lastname" placeholder="Lastname" required>
+            <input type="Email" name="email" placeholder="Email" required>
         </form>
         <button>Submit</button>
+    </div>
             
-                    
                     
 </body>
 </html>
